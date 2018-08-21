@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1">
+	<display-name>Cloud2</display-name>
+
+
+	<servlet>
+		<servlet-name>Account</servlet-name>
+		<servlet-class>com.se.servlet.UserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Account</servlet-name>
+		<url-pattern>/account</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>keys</servlet-name>
+		<servlet-class>com.se.servlet.KeysServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>keys</servlet-name>
+		<url-pattern>/keys</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>downloadkey</servlet-name>
+		<servlet-class>com.se.servlet.DownloadKeyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>downloadkey</servlet-name>
+		<url-pattern>/downloadkey</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>uploadkey</servlet-name>
+		<servlet-class>com.se.servlet.UploadKeyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>uploadkey</servlet-name>
+		<url-pattern>/uploadkey</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>uploaddata</servlet-name>
+		<servlet-class>com.se.servlet.UploadDataServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>uploaddata</servlet-name>
+		<url-pattern>/uploaddata</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>view</servlet-name>
+		<servlet-class>com.se.servlet.ViewFileServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>view</servlet-name>
+		<url-pattern>/view</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>dt</servlet-name>
+		<servlet-class>com.se.servlet.DataTransmissionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>dt</servlet-name>
+		<url-pattern>/dt</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
